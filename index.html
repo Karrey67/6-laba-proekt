@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        function vector(){
+            this.x = +prompt("Введите значение x");
+            this.y = +prompt("Введите значение y");
+            this.z = +prompt("Введите значение z");
+
+            this.q = function(){
+                alert("Длина вектора равна: " + Math.sqrt((this.x*this.x)+(this.y*this.y)+(this.z*this.z)));
+            }
+        }
+        var vectornew = new vector();
+        vectornew.q();
+    </script>
+</body>
+</html>
